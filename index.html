@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080b10">
+<meta name="description" content="Abhinash Kumar Reddy Vulavapottu — Computer Science graduate interested in AI, Generative AI, Python and software development.">
+<title>Abhinash Reddy | AI & Software</title>
+<style>
+:root{--bg:#080b10;--panel:#0b1118;--text:#f1f5f9;--muted:#91a0b3;--line:#202b38;--mint:#65edc2;--mint2:#8ff7d4;--blue:#75a9e8;--purple:#c084fc;--max:1490px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.65}
+a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 9vw));margin:auto}
+header{height:75px;border-bottom:1px solid #ffffff12;background:#080b10ed;position:sticky;top:0;z-index:10;backdrop-filter:blur(12px)}
+.nav{height:100%;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:900;font-size:1.8rem;letter-spacing:-.07em}.logo span{color:var(--mint)}.navlinks{display:flex;gap:clamp(17px,3vw,48px);font-size:.87rem;letter-spacing:.07em;color:#a0aab8;text-transform:uppercase}.navlinks a:hover{color:var(--mint)}
+.hero{min-height:calc(100vh - 75px);display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:5vw;padding:75px 0 85px;background:radial-gradient(ellipse at 95% 25%,#0e2b292c,transparent 43%),radial-gradient(ellipse at 0% 90%,#12233a38,transparent 40%)}
+.status{display:flex;align-items:center;gap:12px;color:var(--mint);font:600 .83rem ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase}.pulse{height:9px;width:9px;border-radius:50%;background:var(--mint);box-shadow:0 0 18px #65edc2a8}
+h1{font-size:clamp(4.3rem,8.5vw,8.4rem);line-height:.84;letter-spacing:-.075em;margin:38px 0 35px;text-transform:uppercase;font-weight:850}
+h1 .solid{display:block;color:var(--text)}h1 .outline{display:block;color:transparent;-webkit-text-stroke:1.5px #9aa8b9;font-weight:500}
+.intro{font-size:clamp(1.1rem,1.6vw,1.4rem);color:var(--muted);max-width:690px;line-height:1.65}.intro strong{color:#eaf2fa;font-weight:700}
+.actions{display:flex;gap:15px;flex-wrap:wrap;margin-top:42px}.btn{display:inline-flex;align-items:center;gap:14px;padding:16px 23px;border:1px solid var(--line);border-radius:9px;font-size:1.05rem;transition:.2s}.btn.primary{background:var(--mint);color:#06110e;border-color:var(--mint);font-weight:750}.btn:hover{transform:translateY(-3px);border-color:var(--mint)}.social{display:flex;gap:25px;margin-top:30px;color:var(--blue);font-size:.98rem}.social a:hover{color:var(--mint)}
+.code-window{border:1px solid #293746;border-radius:19px;background:#0a1016;overflow:hidden;box-shadow:0 30px 100px #0008;max-width:650px;justify-self:end;width:100%}.window-top{height:55px;border-bottom:1px solid #25313d;display:flex;align-items:center;padding:0 20px;gap:9px;color:#71849a;font: .83rem ui-monospace,monospace}.lights{display:flex;gap:8px}.lights i{height:10px;width:10px;border-radius:50%;background:#344252}.filename{margin-left:auto}.code{padding:35px 38px 40px;font:clamp(.8rem,1.2vw,1rem)/2 ui-monospace,SFMono-Regular,Menlo,monospace;color:#dbe7f3;white-space:pre-wrap}.kw{color:#c084fc}.type{color:#67e8f9}.str{color:#65edc2}.fn{color:#80b7ff}.window-bottom{border-top:1px solid #25313d;padding:14px 21px;color:#7890a8;font: .78rem ui-monospace,monospace}.ready{color:var(--mint);margin-right:10px}
+section{padding:105px 0;border-top:1px solid #ffffff10;scroll-margin-top:75px}.section-label{color:var(--mint);font:600 .78rem ui-monospace,monospace;letter-spacing:.15em;text-transform:uppercase}.section-title{font-size:clamp(2.4rem,5vw,4rem);line-height:1.05;letter-spacing:-.055em;margin:15px 0 20px}.section-desc{color:var(--muted);font-size:1.08rem;max-width:720px}
+.about-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:22px;margin-top:38px}.panel{border:1px solid var(--line);background:linear-gradient(145deg,#0e151e,#0a1017);border-radius:14px;padding:28px}.panel p{color:var(--muted);margin:0}.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px}.fact{border:1px solid var(--line);background:#0b121a;border-radius:10px;padding:17px}.fact small{display:block;color:#8191a5;text-transform:uppercase;letter-spacing:.08em;font-size:.72rem}.fact b{display:block;margin-top:5px;font-size:.98rem}
+.skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:38px}.skill h3{margin:0 0 16px;font-size:1.05rem}.chips{display:flex;flex-wrap:wrap;gap:9px}.chip{border:1px solid #29394a;background:#101923;color:#cbd7e4;padding:7px 11px;border-radius:7px;font-size:.86rem}
+.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:17px;margin-top:38px}.project{position:relative;min-height:230px}.project-no{font: .78rem ui-monospace,monospace;color:var(--mint);letter-spacing:.12em}.project h3{font-size:1.35rem;margin:12px 0}.project p{color:var(--muted);margin:0 0 20px}.stack{border-top:1px solid var(--line);padding-top:15px;color:#a9bed0;font: .83rem ui-monospace,monospace}
+.timeline{display:grid;gap:15px;margin-top:38px}.role{display:grid;grid-template-columns:210px 1fr;gap:25px}.date{color:var(--mint);font: .86rem ui-monospace,monospace}.role h3{margin:0;font-size:1.2rem}.org{color:#8fa0b4;font-size:.93rem}.role p{color:var(--muted);margin:10px 0 0}.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}.certs{display:flex;flex-wrap:wrap;gap:10px;margin-top:15px}.cert{border:1px solid #29394a;background:#101923;padding:10px 13px;border-radius:7px;color:#d3deeb;font-size:.88rem}
+.contact-panel{margin-top:35px;border:1px solid #31504b;border-radius:15px;background:linear-gradient(110deg,#0e2524,#111b29);padding:35px;display:flex;align-items:center;justify-content:space-between;gap:25px}.contact-panel h3{font-size:2rem;margin:0 0 5px;letter-spacing:-.04em}.contact-panel p{margin:0;color:var(--muted)}
+footer{border-top:1px solid #ffffff10;padding:27px 0;color:#7e8b9b;font-size:.85rem}.footer-inner{display:flex;justify-content:space-between;gap:15px}
+.reveal{opacity:0;transform:translateY(18px);transition:.65s ease}.reveal.show{opacity:1;transform:none}
+
+.certificate-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px;margin-top:35px}
+.certificate-card{display:block;border:1px solid var(--line);background:linear-gradient(145deg,#0e151e,#0a1017);border-radius:13px;overflow:hidden;transition:.2s}
+.certificate-card:hover{transform:translateY(-4px);border-color:var(--mint)}
+.certificate-card img{display:block;width:100%;height:190px;object-fit:contain;background:#f7f8fa;padding:8px}
+.certificate-info{padding:17px}.certificate-info h3{font-size:1rem;line-height:1.35;margin:0 0 7px}.certificate-info p{color:var(--muted);font-size:.84rem;margin:0}.certificate-info span{display:inline-block;color:var(--mint);font-size:.78rem;margin-top:12px}
+@media(max-width:900px){.certificate-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.certificate-grid{grid-template-columns:1fr}.certificate-card img{height:210px}}
+@media(max-width:900px){.hero{grid-template-columns:1fr;gap:45px}.code-window{justify-self:start;max-width:700px}.skill-grid{grid-template-columns:1fr 1fr}.navlinks{gap:15px;font-size:.75rem}}
+@media(max-width:620px){.wrap{width:calc(100% - 34px)}header{height:auto;min-height:70px}.nav{align-items:flex-start;flex-direction:column;padding:12px 0}.navlinks{width:100%;overflow-x:auto;padding:5px 0 9px;white-space:nowrap}.hero{min-height:0;padding:65px 0}.status{font-size:.7rem}h1{font-size:clamp(3.4rem,16vw,5.5rem);margin:30px 0}.code{padding:23px 20px;font-size:.76rem}.about-grid,.skill-grid,.project-grid,.edu-grid{grid-template-columns:1fr}.role{grid-template-columns:1fr;gap:5px}.contact-panel{align-items:flex-start;flex-direction:column;padding:25px}.footer-inner{flex-direction:column}section{padding:75px 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><a class="logo" href="#home">ABHI<span>.</span></a><nav class="navlinks"><a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a></nav></div></header>
+<main>
+<div class="wrap hero" id="home">
+<div class="reveal">
+<div class="status"><i class="pulse"></i> Open to AI / Software Graduate Opportunities</div>
+<h1><span class="solid">Abhinash</span><span class="outline">Kumar</span><span class="outline">Reddy</span></h1>
+<p class="intro">Computer Science graduate interested in <strong>Artificial Intelligence, Generative AI and Python development</strong>, with a foundation in software engineering, backend systems and data analytics.</p>
+<div class="actions"><a class="btn primary" href="#projects">View Projects <span>↗</span></a><a class="btn" href="mailto:abhinashdev2004@gmail.com">Contact Me <span>✉</span></a></div>
+<div class="social"><a href="https://www.linkedin.com/in/abhinash-reddy-0a4ab1347/" target="_blank" rel="noopener">in&nbsp; LinkedIn ↗</a></div>
+</div>
+<div class="code-window reveal"><div class="window-top"><div class="lights"><i></i><i></i><i></i></div><span class="filename">ai_engineer.py</span></div>
+<div class="code"><span class="kw">class</span> <span class="type">ComputerScienceGraduate</span>:
+    <span class="kw">def</span> <span class="fn">__init__</span>(self):
+        self.name = <span class="str">"Abhinash Reddy"</span>
+        self.focus = [
+            <span class="str">"Generative AI"</span>,
+            <span class="str">"Python"</span>,
+            <span class="str">"Data Analytics"</span>
+        ]
+        self.foundation = [
+            <span class="str">"Java"</span>, <span class="str">"SQL"</span>,
+            <span class="str">"Software Development"</span>
+        ]
+
+    <span class="kw">def</span> <span class="fn">build</span>(self):
+        <span class="kw">return</span> <span class="str">"Learn. Build. Improve."</span></div>
+<div class="window-bottom"><span class="ready">●</span> learning_mode = active&nbsp; · &nbsp;ready_to_contribute</div></div>
+</div>
+
+<section id="about"><div class="wrap"><div class="section-label">01 / About</div><h2 class="section-title">A little about me.</h2><p class="section-desc">Curious about emerging technology. Focused on building practical solutions.</p>
+<div class="about-grid"><div class="panel reveal"><p>I’m a 2026 Computer Science and Engineering graduate from PVKK Institute of Technology. I enjoy developing applications, working with databases and exploring how AI can make software more useful. My background includes a Generative AI internship, Java development training and hands-on projects using Python, Java, SQL and web technologies. I’m looking for an opportunity to learn, collaborate and contribute to real-world technology projects.</p></div>
+<div class="facts reveal"><div class="fact"><small>Location</small><b>Madanapalle, India</b></div><div class="fact"><small>Degree</small><b>B.Tech · CSE</b></div><div class="fact"><small>Graduation</small><b>2026</b></div><div class="fact"><small>Career focus</small><b>AI & Software</b></div></div></div></div></section>
+
+<section id="skills"><div class="wrap"><div class="section-label">02 / Skills</div><h2 class="section-title">My technical toolbox.</h2><p class="section-desc">A growing toolkit developed through academic learning, training and projects.</p>
+<div class="skill-grid">
+<div class="panel skill reveal"><h3>Programming</h3><div class="chips"><span class="chip">Python</span><span class="chip">Java</span><span class="chip">SQL</span><span class="chip">JavaScript</span></div></div>
+<div class="panel skill reveal"><h3>AI & Emerging Tech</h3><div class="chips"><span class="chip">AI Fundamentals</span><span class="chip">Generative AI</span><span class="chip">AI API Integration</span><span class="chip">Agentic AI Fundamentals</span><span class="chip">ML Fundamentals</span></div></div>
+<div class="panel skill reveal"><h3>Data & Analytics</h3><div class="chips"><span class="chip">Power BI</span><span class="chip">Microsoft Excel</span><span class="chip">Data Analysis</span><span class="chip">Data Visualization</span></div></div>
+<div class="panel skill reveal"><h3>Backend</h3><div class="chips"><span class="chip">Spring Boot</span><span class="chip">Spring Security</span><span class="chip">Hibernate</span><span class="chip">REST APIs</span><span class="chip">JWT</span></div></div>
+<div class="panel skill reveal"><h3>Databases</h3><div class="chips"><span class="chip">MySQL</span><span class="chip">SQLite</span></div></div>
+<div class="panel skill reveal"><h3>Tools & Concepts</h3><div class="chips"><span class="chip">Git</span><span class="chip">Postman</span><span class="chip">OOP</span><span class="chip">DBMS</span><span class="chip">SDLC</span><span class="chip">Debugging</span></div></div>
+</div></div></section>
+
+<section id="projects"><div class="wrap"><div class="section-label">03 / Projects</div><h2 class="section-title">Things I’ve worked on.</h2><p class="section-desc">Selected academic and personal software projects.</p>
+<div class="project-grid">
+<article class="panel project reveal"><div class="project-no">PROJECT 01</div><h3>AI-Powered Data Analytics Dashboard</h3><p>Designed a data analytics workflow for dataset processing, cleaning and analysis. Developed interactive dashboards to visualize business metrics and trends, and explored AI-assisted insight generation for data-driven decision-making.</p><div class="stack">Python · Pandas · Power BI</div></article>
+<article class="panel project reveal"><div class="project-no">PROJECT 02</div><h3>Student Performance Prediction</h3><p>Explored data preprocessing and supervised Machine Learning techniques. Applied classification concepts and model evaluation.</p><div class="stack">Python · Scikit-learn</div></article>
+<article class="panel project reveal"><div class="project-no">PROJECT 03</div><h3>AI Resume Analyzer</h3><p>Developed an AI-powered application integrating an AI API to analyze resume content and generate feedback. Implemented backend services and database persistence using Spring Boot and MySQL.</p><div class="stack">Java · Spring Boot · AI API · MySQL</div></article>
+<article class="panel project reveal"><div class="project-no">PROJECT 04</div><h3>Smart Student Management System</h3><p>Developed a Python application to add, search and manage student records. Applied Object-Oriented Programming and SQLite database operations.</p><div class="stack">Python · SQLite</div></article>
+</div></div></section>
+
+<section id="experience"><div class="wrap"><div class="section-label">04 / Experience</div><h2 class="section-title">Where I’ve learned.</h2><div class="timeline">
+<div class="panel role reveal"><div class="date">12 DEC 2025 — 25 MAR 2026</div><div><h3>Generative AI Intern</h3><div class="org">Silicon Techno Solutions · In collaboration with AICTE</div><p>Completed the internship program on Generative AI for Data Visualization and Multimodal Applications.</p></div></div>
+<div class="panel role reveal"><div class="date">12 MAY 2025 — 12 JUL 2025</div><div><h3>Java Full Stack Development Intern</h3><div class="org">Vaultsphere AI Technologies Pvt. Ltd.</div><p>Completed an internship in Java Full Stack Development, gaining hands-on exposure to front-end and back-end development, responsive web applications, RESTful API integration and database work.</p></div></div>
+</div></div></section>
+
+<section id="education"><div class="wrap"><div class="section-label">05 / Education</div><h2 class="section-title">Academic background.</h2><div class="timeline">
+<div class="panel role reveal"><div class="date">2022 — 2026</div><div><h3>B.Tech — Computer Science and Engineering</h3><div class="org">PVKK Institute of Technology, Ananthapur</div></div></div>
+<div class="panel role reveal"><div class="date">2020 — 2022</div><div><h3>Intermediate — MPC</h3><div class="org">Sri Madanapalle Junior College, Madanapalle</div></div></div>
+<div class="panel role reveal"><div class="date">2020</div><div><h3>Secondary School Certificate (SSC)</h3><div class="org">Narayana Group of Schools, Madanapalle</div></div></div>
+</div></div></section>
+
+<section id="certifications"><div class="wrap"><div class="section-label">06 / Certifications</div><h2 class="section-title">Credentials you can verify.</h2><p class="section-desc">Open any certificate to view the full image.</p>
+<div class="certificate-grid">
+<a class="certificate-card reveal" href="salesforce-ai-associate.png" target="_blank" rel="noopener"><img src="salesforce-ai-associate.png" alt="Salesforce Certified AI Associate certificate"><div class="certificate-info"><h3>Salesforce Certified AI Associate</h3><p>Issued April 6, 2025</p><span>View certificate ↗</span></div></a>
+<a class="certificate-card reveal" href="hackerrank-sql-advanced.png" target="_blank" rel="noopener"><img src="hackerrank-sql-advanced.png" alt="HackerRank SQL Advanced certificate"><div class="certificate-info"><h3>HackerRank SQL (Advanced)</h3><p>Earned March 22, 2026</p><span>View certificate ↗</span></div></a>
+<a class="certificate-card reveal" href="oracle-agentic-ai.png" target="_blank" rel="noopener"><img src="oracle-agentic-ai.png" alt="Oracle Certified Foundations Associate Agentic AI certificate"><div class="certificate-info"><h3>Oracle Certified Foundations Associate – Agentic AI</h3><p>Issued August 7, 2026</p><span>View certificate ↗</span></div></a>
+<a class="certificate-card reveal" href="silicon-techno-generative-ai-internship.png" target="_blank" rel="noopener"><img src="silicon-techno-generative-ai-internship.png" alt="Silicon Techno Solutions Generative AI internship certificate"><div class="certificate-info"><h3>Generative AI Internship</h3><p>Silicon Techno Solutions · 12 Dec 2025 – 25 Mar 2026</p><span>View internship certificate ↗</span></div></a>
+<a class="certificate-card reveal" href="vaultsphere-java-full-stack-internship.png" target="_blank" rel="noopener"><img src="vaultsphere-java-full-stack-internship.png" alt="Vaultsphere AI Technologies Java Full Stack Development internship certificate"><div class="certificate-info"><h3>Java Full Stack Development Internship</h3><p>Vaultsphere AI Technologies Pvt. Ltd. · 12 May – 12 Jul 2025</p><span>View internship certificate ↗</span></div></a>
+</div></div></section>
+
+<section id="contact"><div class="wrap"><div class="section-label">07 / Contact</div><div class="contact-panel reveal"><div><h3>Let’s build something meaningful.</h3><p>Open to graduate opportunities, collaboration and learning.</p></div><div class="actions" style="margin:0"><a class="btn primary" href="mailto:abhinashdev2004@gmail.com">Email Me ↗</a><a class="btn" href="https://www.linkedin.com/in/abhinash-reddy-0a4ab1347/" target="_blank" rel="noopener">LinkedIn ↗</a></div></div></div></section>
+</main><footer><div class="wrap" style="display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap"><span>© 2026 Abhinash Kumar Reddy Vulavapottu</span><span>Designed with focus & curiosity.</span></div></footer>
+<script>const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');observer.unobserve(e.target)}}),{threshold:.1});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));</script>
+</body></html>
